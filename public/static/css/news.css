@@ -1,0 +1,332 @@
+:root {
+    --width-side-bar: 260px;
+}
+
+/* sidebar-title */
+.sidebar-title {
+    text-align: center;
+    color: var(--main-color);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.banner-news {
+    width: 100%;
+}
+
+/* sidebar styling */
+
+.side_bar {
+    width: var(--width-side-bar);
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+    
+    /* Ẩn sidebar khi chưa kích hoạt */
+    transition: left 0.2s linear;
+}
+
+.text-second {
+    color: #006769!important;
+}
+
+.filter-icon {
+    display: none;
+    top: 20px;
+    left: 20px;
+    background-color: #2d89ef;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.background-sidebar {
+    display: none;
+}
+
+/* Ẩn sidebar khi màn hình nhỏ hơn 990px */
+@media (max-width: 990px) {
+    .filter-icon {
+        display: block;
+    }
+
+    .background-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .side_bar {
+        /* display: none; */
+        position: fixed;
+        top: 0;
+        left: calc(var(--width-side-bar) * -1);
+    }
+
+    .side_bar.show {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: var(--width-side-bar);
+        overflow-y: scroll;
+        z-index: 999;
+    }
+
+    .side_bar.show + .background-sidebar {
+        display: block;
+    }
+}
+
+.side_bar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side_bar ul li {
+    margin: 15px 0;
+}
+
+.side_bar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f7f7f7;
+}
+
+.side_bar ul li a:hover {
+    background-color: #2d89ef;
+    color: #fff;
+}
+
+.side_bar ul li ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.side_bar ul li ul li {
+    margin: 8px 0;
+}
+
+.side_bar ul li ul li a {
+    font-weight: 400;
+    background-color: #efefef;
+}
+
+.side_bar ul li ul li a:hover {
+    background-color: #2d89ef;
+    color: #fff;
+}
+
+.submenu {
+    display: none;
+}
+
+.side_bar ul li a {
+    cursor: pointer;
+}
+
+/* Bài viết */
+
+/* Title and View All button styling */
+.title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #2d2d2d;
+}
+
+.view-all-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.view-all-btn:hover {
+    text-decoration: underline;
+}
+
+/* Grid for article cards */
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Styling for each article card */
+.article-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling for article image */
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+    padding: 15px;
+}
+
+.card-body h5 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-size: 0.95rem;
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.news-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2em;
+    text-align: center;
+}
+
+.section-title-container {
+    margin-bottom: 50px;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.news-thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.news-content {
+    flex-grow: 1;
+}
+
+.news-title a {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.news-title a:hover {
+    color: #007bff;
+}
+
+.news-excerpt {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.news-date {
+    font-size: 0.8em;
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-thumbnail {
+        margin-bottom: 15px;
+    }
+
+    .news-title {
+        text-align: center;
+    }
+}
+
+.list-item {
+    transition: 0.1s ease-in;
+}
+
+.list-item:hover {
+    position: relative;
+    left: 4px;
+    color: var(--main-color);
+}
+
+.list-item.active {
+    position: relative;
+    left: 4px;
+    color: var(--main-color);
+}
+
+.list-item.active::before {
+    position: absolute;
+    content: "";
+    border: 4px solid #d0011b;
+    border-color: transparent transparent transparent #d0011b;
+    top: 50%;
+    transform: translateY(calc(-50% - 1px));
+    right: 100%;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.pagination-link {
+    color: #9f9f9f;
+}
+
+.pagination-link.active {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 4px;
+}

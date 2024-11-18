@@ -1,0 +1,76 @@
+/* Thiết kế nút bộ lọc */
+.btn-filter {
+margin-top: 20px;
+background-color: #f04e31;
+color: #fff;
+padding: 5px 10px;
+/* Nhỏ gọn */
+border: none;
+border-radius: 20px;
+font-size: 17px;
+/* Kích thước chữ nhỏ gọn */
+font-weight: bold;
+margin: 3px;
+}
+
+.btn-filter:hover {
+background-color: #ff704d;
+transform: translateY(-2px);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 5px;
+}
+
+/* Header styling */
+.brand-header {
+text-align: center;
+padding-bottom: 30px;
+color: #006769;
+}
+
+/* brand styling */
+.brand-item {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
+border-bottom: 2px solid #f2f2f2;
+}
+
+.brand-item .brand-logo img {
+max-height: 60px;
+margin-right: 20px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.brand-item .brand-number {
+margin-right: 28px;
+margin-bottom: 20px;
+padding: 12px 16px;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: .04em;
+text-transform: capitalize;
+color: #cf102d;
+border: 2px solid #CF102D;
+border-radius: 12px;
+}
+
+.brand-item:hover {
+background-color: #f9f9f9;
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.brand-divider {
+border-top: 2px solid red;
+margin: 0 0 20px;
+}

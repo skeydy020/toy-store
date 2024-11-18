@@ -1,0 +1,356 @@
+:root {
+    --main-color: #FC4100;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin: 0!important;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+a {
+    color: #000;
+    text-decoration: none!important;
+}
+
+
+.fw-400 {
+    font-weight: 400!important;
+}
+
+.fw-500 {
+    font-weight: 500!important;
+}
+
+.fw-600 {
+    font-weight: 600!important;
+}
+
+
+.btn {
+    transition: all .1s ease-in;
+    font-weight: 500!important;
+}
+
+.btn-main,
+.bg-main,
+.btn-main-hover {
+    background-color: var(--main-color)!important;
+    color: #fff;
+}
+
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-second {
+    color: #006769;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.btn-custom {
+    border: none;
+    background-color: transparent;
+}
+
+.btn-main-hover:hover {
+    color: #fff;
+    opacity: 0.8!important;
+}
+
+.btn-main:hover {
+    background-color: #fff!important;
+    color: var(--main-color)!important;
+}
+
+.btn-border {
+    color: #000;
+    border: 2px solid var(--main-color);
+    border-radius: 24px;
+    background: #fff;
+}
+
+.btn-border:hover {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.btn-nohover:hover {
+    color: var(--main-color);
+}
+
+.btn-nohover {
+    padding: 0!important;
+}
+
+.btn-float-right:hover {
+    color: var(--main-color);
+}
+
+/* Custom CSS for forcing left-to-right slide animation */
+.carousel-item-next,
+.carousel-item-start {
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item-prev,
+.carousel-item-end {
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.carousel-item.active {
+    transform: translateX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 1rem;
+    background-color: #FF6500;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 12px;
+}
+
+.discount-badge-inline {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 20px;
+}
+
+.card {
+    
+}
+
+.card-custom {
+    border:none;
+}
+
+.card-title {
+    font-weight: normal!important;
+    height: 44px;
+    text-align: left;
+    font-size: 1.1rem;
+    display: -webkit-box;           /* Necessary for line clamping */
+    -webkit-line-clamp: 2;          /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;   /* Specify vertical orientation */
+    overflow: hidden;               /* Hide any overflow text */
+    text-overflow: ellipsis;        /* Add ellipsis at the end of overflowing text */
+}
+
+.one-line-text-overflow {
+    display: -webkit-box;           /* Necessary for line clamping */
+    -webkit-line-clamp: 1;          /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;   /* Specify vertical orientation */
+    overflow: hidden;               /* Hide any overflow text */
+    text-overflow: ellipsis;   
+}
+
+.card-text {
+    display: -webkit-box;           /* Necessary for line clamping */
+    -webkit-line-clamp: 3;          /* Limit text to 2 lines */
+    -webkit-box-orient: vertical;   /* Specify vertical orientation */
+    overflow: hidden;               /* Hide any overflow text */
+    text-overflow: ellipsis;        /* Add ellipsis at the end of overflowing text */
+}
+
+.card-body {
+    padding: 16px 24px !important;
+}
+
+.price-regular {
+    color: #636363;
+    text-decoration: line-through;
+}
+
+.price-onsale {
+    color: var(--main-color);
+}
+
+.btn-favorite {
+    padding-right: 0!important;
+}
+
+.card-no-border {
+    height: 200px!important;
+    width: 200px!important;
+    object-fit: cover;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.search-bar {
+    border-radius: 20px;
+    border: none;
+}
+
+a:hover {
+    transition: all .1s ease-in;
+    color: var(--main-color);
+}
+
+.border-main {
+    border-color: var(--main-color)!important;
+}
+
+li {
+    list-style-type: none!important;
+}
+
+.bg-light-gray {
+    background-color: #e6e6e6;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.img-btn {
+    border:none;
+}
+
+.required::after {
+    content: '*';
+    color: red;
+    position: relative;
+    left: 2px;
+}
+
+.main-image {
+    position: relative;
+    overflow: hidden;
+}
+
+#mainImage {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#magnifier {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 200px;
+    height: 200px;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+}
+
+
+.toggle-display-pw-icon:hover {
+    cursor: pointer;
+}
+
+.side-bar-box {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    display: block!important;
+    height: 296px!important;
+}
+
+.side-bar-heading {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.side-bar-item:hover,
+.side-bar-item.active {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.box-rounded {
+    border-radius: 20px;
+}
+
+.box-content {
+    display: none!important;
+}
+
+.box-content.active {
+    display: block!important;
+}
+
+.modal {
+    
+}
+
+.cart-popup {
+    z-index: 999;
+    width: 420px;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.19);
+    transform: scale(0);
+    opacity: 0;
+    transition: 0.15s ease-in;
+    transform-origin: calc(100% - 32px) top;
+    cursor: default;
+}
+
+.cart-popup::before {
+    content: "";
+    position: absolute;
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    top: -28px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.btn-cart:hover .cart-popup{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-cart::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top:100%;
+    right: 12px;
+    width: 100%;
+    height: 50%;
+}
+
+.cart-item-list {
+    max-height: 50vh; /*Thiet lap chieu cao theo ti le man hinh*/
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
